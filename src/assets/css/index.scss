@@ -1,0 +1,42 @@
+/* Tailwind base */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./styles/color";
+@import "./styles/font";
+@import "./styles/nav";
+@import "./styles/card";
+@import "./styles/button";
+@import "./styles/sidebar";
+
+body {
+  margin: 0;
+  font-family: "Poppins-Regular";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: black;
+  background-color: #f8f8f8;
+}
+@media only screen and (max-width: 767px) {
+  body {
+    width: min-content;
+  }
+}
+
+/* other element */
+.mycard {
+  width: 100%;
+  height: 100%;
+}
+
+hr.border-main {
+  border: 1px solid #e8e9eb;
+}
+
+.root-canvas {
+  display: block;
+  position: relative;
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
